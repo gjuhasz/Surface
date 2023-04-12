@@ -1,0 +1,34 @@
+This is a project to 
+
+
+## Intallation (to be )
+
+### environment
+
+
+```
+conda create --name old_ase+dftb+ mlenv python==3.10 pandas numpy=1.22.1
+
+conda activate old_ase+dftb+ 
+conda install ase
+conda install spglib psycopg2 pyamg pytest
+
+conda config --add channels conda-forge
+conda install -n base mamba
+    or 
+conda install mamba -yc conda-forge
+Y
+mamba install 'dftbplus=*=mpi_openmpi_*'
+mamba install dftbplus-tools dftbplus-python
+```
+
+check ase:
+```
+
+```
+
+
+
+**Note:** there is a compartibility issue between latest DFTB+ and ase, that is why using the strange versions
+
+**Error Note:** not running on LG, mamba  
